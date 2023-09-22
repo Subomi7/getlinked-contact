@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/main.js"></script>
   </head>
   <body class="bg-secondary">
     <header class="">
@@ -122,6 +123,7 @@
             >Email us below to any question related<br /> 
             to our event
             </p>
+            <form class="form" id="contactForm">
             <div class="block py-4 lg:hidden">
               <input type="text" id="large-input" placeholder="Team's Name" class="w-96 p-2 placeholder:text-white text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage">
           </div>
@@ -132,16 +134,17 @@
           <input type="text" id="large-input" placeholder="Email" class="w-96 p-2 placeholder:text-white text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage">
       </div>
             <div class="py-4 hidden lg:block">
-              <input type="text" id="large-input" placeholder="Firstname" class="w-96 p-2 placeholder:text-white text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage">
+              <input name="Firstname" type="text" id="large-input" placeholder="Firstname" class="w-96 p-2 placeholder:text-white text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage">
           </div>
           <div class="py-4 hidden lg:block">
-            <input type="text" id="large-input" placeholder="Mail" class="w-96 p-2 placeholder:text-white text-gray-900 border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage">
+            <input type="text" id="large-input" placeholder="Mail" class="w-96 p-2 placeholder:text-white text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage">
         </div>
             <div class="py-4">
               <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-white placeholder:text-white bg-subby rounded-md border border-gray-300" placeholder="Message"></textarea>
           </div>
           <div class="flex items-center justify-center py-6">
-            <button type="button" class="btn btn-primary w-40">Submit</button></div>
+            <button type="submit" id="submitButton" class="btn btn-primary w-40">Submit</button></div>
+        </form>
           </div>
           </div>
         </div>
