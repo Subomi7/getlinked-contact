@@ -1,28 +1,26 @@
-const doc = document.getElementById('contactForm');
-console.log({ doc });
-doc.addEventListener('submitButton', function (e) {
-  e.preventDefault();
-
+function contactForm() {
   // Get form field values
-  const teamName = document.getElementById('teamName').value;
-  const topic = document.getElementById('topic').value;
-  const email = document.getElementById('email').value;
-  const firstname = document.getElementById('firstname').value;
-  const mail = document.getElementById('mail').value;
-  const message = document.getElementById('message').value;
+  const teamName = document.getElementById('teamName')?.value;
+  const topic = document.getElementById('topic')?.value;
+  const email = document.getElementById('email')?.value;
+  const firstname = document.getElementById('firstname')?.value;
+  const mail = document.getElementById('mail')?.value;
+  const message = document.getElementById('message')?.value;
 
   // Construct the API request URL
-  const apiUrl = '{{baseUrl}}/hackathon/registration'; // Replace with your API URL
+  const baseUrl = 'https://backend.getlinked.ai';
+  const apiUrl = `${baseUrl}/hackathon/contact-form`; // Replace with your API URL
 
   // Create a JSON object with the form data
   const formData = {
-    email: 'sample@eexample.com',
+    email: mail || email,
     phone_number: '0903322445533',
-    first_name: 'Space Explore',
-    message: 'I need further info',
+    first_name: firstname || 'Space Explore',
+    message,
   };
 
-  //request to the API
+  console.log(formData);
+
   fetch(apiUrl, {
     method: 'POST',
     headers: {
@@ -41,4 +39,4 @@ doc.addEventListener('submitButton', function (e) {
       console.error('Error:', error);
       alert('An error occurred. Please try again later.');
     });
-});
+}
