@@ -637,6 +637,10 @@ video {
   width: 100%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -946,6 +950,10 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
   }
 
   .lg\:flex-row {

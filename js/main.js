@@ -7,11 +7,11 @@ function contactForm() {
   const mail = document.getElementById('mail')?.value;
   const message = document.getElementById('message')?.value;
 
-  // Construct the API request URL
+  // The API request URL
   const baseUrl = 'https://backend.getlinked.ai';
-  const apiUrl = `${baseUrl}/hackathon/contact-form`; // Replace with your API URL
+  const apiUrl = `${baseUrl}/hackathon/contact-form`;
 
-  // Create a JSON object with the form data
+  // JSON object with the form data
   const formData = {
     email: mail || email,
     phone_number: '0903322445533',
@@ -30,7 +30,7 @@ function contactForm() {
   })
     .then((response) => response.json())
     .then((data) => {
-      // Handle the API response here, e.g., display a success message
+      //  API response
       console.log('API response:', data);
       alert('Form submitted successfully!');
     })
