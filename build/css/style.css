@@ -552,10 +552,6 @@ video {
   visibility: visible;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .absolute {
   position: absolute;
 }
@@ -635,10 +631,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .flex-1 {
@@ -797,11 +789,6 @@ video {
   font-weight: 600;
 }
 
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
 .text-mirage {
   --tw-text-opacity: 1;
   color: rgb(212 52 254 / var(--tw-text-opacity));
@@ -892,10 +879,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:visible {
-    visibility: visible;
-  }
-
   .lg\:invisible {
     visibility: hidden;
   }
@@ -950,10 +933,6 @@ video {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-96 {
-    width: 24rem;
   }
 
   .lg\:flex-row {
